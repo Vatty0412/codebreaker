@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Codebreaker</title>
+</head>
+<body>
+    <section id="rules">
+        <h1>Codebreaker</h1>
+        <p>
+            <b>Agent Vector-007, welcome to Operation Codebreaker.</b>
+            <span>Your assignment: infiltrate the system and uncover the classified 6-digit code. Our intelligence informed us that each digit in the code is unique.</span>
+            <span>After every attempt, intelligence will send you cryptic clues hinting you towards the correct code.</span>
+            <ul>
+                <li style="color: #4ade80;">Green Color: Correct digit in the correct position</li>
+                <li style="color: #fbbf24;">Yellow Color: Correct digit in the wrong position</li>
+                <li style="color: #f87171;">Red Color: Digit not present in the code</li>
+            </ul>
+            But caution - Headquarters authorizes only eight chances before the mission is compromised.
+            Take your chances Agent. Do you have what it takes to crack the code?
+            Initiate the mission now.
+        </p>
+    </section>
+
+    <section id="main-game">
+        <form id="input-form" readonly>
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="submit" style="display: none;" >
+        </form>
+        <span id="attempts">Attempts left: 8</span>
+    </section>
+    <section id="responses">
+        
+    </section>
+</body>
+<script src="script.js" defer></script>
+</html>
